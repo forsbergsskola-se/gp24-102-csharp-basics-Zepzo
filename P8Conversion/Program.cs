@@ -11,7 +11,7 @@
 Console.WriteLine("Give me a number");
 String number = Console.ReadLine();
 double FloatNumber = Convert.ToDouble(number);
-Console.WriteLine(number);
+Console.WriteLine(FloatNumber);
 int IntNumber = (int) FloatNumber;
 Console.WriteLine(IntNumber);
 
