@@ -8,3 +8,11 @@
     What happens? (Hint: You will see an Invalid Format Exception
 */
 
+Console.WriteLine("Give me a number");
+String number = Console.ReadLine();
+double FloatNumber = Convert.ToDouble(number);
+Console.WriteLine(number);
+int IntNumber = (int) FloatNumber;
+Console.WriteLine(IntNumber);
+
+// Convering the fist string to int wont work brcause it cant trun letters in to numbers
