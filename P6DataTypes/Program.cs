@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿String outputstring = "Hello World!";
+Console.WriteLine(outputstring);
+float decimalValue = 0.3f;
+Console.WriteLine(decimalValue);
+bool isAwsome = true;
+Console.WriteLine(isAwsome);
