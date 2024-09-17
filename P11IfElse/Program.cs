@@ -60,16 +60,34 @@ int intNumber = Convert.ToInt32(number);
 bool isBigger = intAge < intNumber;
 bool isSmaller = intAge > intNumber;
 
-bool isEven = intNumber % 2 == 0;
-
 if (isBigger)
 {
     Console.WriteLine("This number is bigger");
+    bool isEven = intNumber % 2 == 0;
+
+    if (isEven)
+    {
+        Console.WriteLine("Your number is even");
+    }
+    else
+    {
+        Console.WriteLine("Your number is odd");
+    }
 }
 
 else if (isSmaller)
 {
     Console.WriteLine("Your age is bigger");
+    bool ageEven = intAge % 2 == 0;
+
+    if (ageEven)
+    {
+        Console.WriteLine("Your age is even");
+    }
+    else
+    {
+        Console.WriteLine("Your age is odd");
+    }
 }
 
 else
@@ -77,14 +95,5 @@ else
     Console.WriteLine("Something went wrong please try again");
 }
 
-if (isEven)
-{
-    Console.WriteLine("Your number is even");
-}
-
-else
-{
-    Console.WriteLine("Your number is odd");
-}
 
 
