@@ -14,7 +14,9 @@
 Console.WriteLine("Give me a seed");
 string seed = Console.ReadLine();
 int intSeed = Convert.ToInt32(seed);
+
 Random random = new Random(intSeed);
+
 int intNumber1 = random.Next(0, 5);
 int intNumber2 = random.Next(0, 5);
 int intNumber3 = random.Next(0, 5);
@@ -25,9 +27,9 @@ Console.WriteLine(intNumber1);
 Console.WriteLine(intNumber2);
 Console.WriteLine(intNumber3);
 
-double floatNumber1 = random.NextDouble()+0.5;
-double floatNumber2 = random.NextDouble()+0.5;
-double floatNumber3 = random.NextDouble()+0.5;
+double floatNumber1 = random.NextDouble()*0.5;
+double floatNumber2 = random.NextDouble()*0.5;
+double floatNumber3 = random.NextDouble()*0.5;
 
 Console.WriteLine("Random number between 0 and 0.5");
 
