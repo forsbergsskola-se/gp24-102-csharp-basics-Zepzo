@@ -1,7 +1,4 @@
-﻿using System.Runtime.InteropServices.JavaScript;
-int intSeed = 123243;
-Random random = new Random(intSeed);
-Console.WriteLine("Welcome to Nim!");
+﻿Console.WriteLine("Welcome to Nim!");
 int matches = 25;
 int loop = 0;
 Start:
@@ -11,12 +8,6 @@ if (loop < matches)
     loop++;
     goto Start;
 }
-
-else
-{   
-    goto Number;
-}
-
 Number:
 loop = 0;
 Console.WriteLine("");
@@ -27,8 +18,6 @@ if (intDraw == 1 || intDraw == 2 || intDraw == 3)
 {
     matches -= intDraw;
     goto AiStart;
-        
-        
 }
 else
 {
